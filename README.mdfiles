@@ -1,1 +1,2 @@
 files
+package main import ( fmt strings net/http io ) func main() { url := https://api.intelbase.is/lookup/email payload := strings.NewReader( {\n \ email\ : \ Ohfoursickness@aol.com\ ,\n \ timeout_ms\ : 32,\n \ include_data_breaches\ : true,\n \ exclude_modules\ : [\n \ <string>\ \n ]\n} ) req, _ := http.NewRequest( POST , url, payload) req.Header.Add( x-api-key , Get all from ohfoursickness@ aol.com ) req.Header.Add( Content-Type , application/json ) res, _ := http.DefaultClient.Do(req) defer res.Body.Close() body, _ := io.ReadAll(res.Body) fmt.Println(string(body)) 
